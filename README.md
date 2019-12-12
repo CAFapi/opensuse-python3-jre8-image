@@ -1,0 +1,1 @@
+# opensuse-python3-jre8-image
