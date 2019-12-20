@@ -18,7 +18,6 @@ FROM cafapi/opensuse-jre8:1
 
 # Update the OS packages and install Python
 RUN zypper -n refresh && \
-    zypper -n update && \
     zypper -n install python3
 
 # Tag the image
