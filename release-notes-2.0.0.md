@@ -4,12 +4,10 @@
 ${version-number}
 
 #### New Features
-- **SCMOD-8516**: Extend the security hardening of Java base images by disabling further TLS algorithms apart from [SCMOD-8481]
-(https://portal.digitalsafe.net/browse/SCMOD-8481)
+- **SCMOD-8516**: Extend the security hardening of Java base images by disabling TLS algorithms [here](https://github.com/CAFapi/opensuse-java8-images/blob/develop/src/main/docker/disableWeakTlsAlgorithms.patch)
 
 #### Known Issues
 - None
 
 #### Breaking Changes
-- **SCMOD-8516**: Extend the security hardening of Java base images by disabling further TLS algorithms apart from [SCMOD-8481]
-(https://portal.digitalsafe.net/browse/SCMOD-8481)
+- **SCMOD-8516**: Extend the security hardening of Java base images by disabling TLS algorithms [here](https://github.com/CAFapi/opensuse-java8-images/blob/develop/src/main/docker/disableWeakTlsAlgorithms.patch)
