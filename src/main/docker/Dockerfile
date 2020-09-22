@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-FROM cafinternal/prereleases:opensuse-jre8-3.1.0-SNAPSHOT
+ARG DOCKER_HUB_PRIVATE=docker.io
+FROM ${DOCKER_HUB_PRIVATE}/cafinternal/prereleases:opensuse-jre8-3.1.0-SNAPSHOT
 
 # Update the OS packages and install Python
 RUN zypper -n refresh && \
