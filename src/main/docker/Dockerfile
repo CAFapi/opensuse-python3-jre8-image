@@ -18,7 +18,7 @@
 ARG DOCKER_HUB_PRIVATE=docker.io
 ARG DOCKER_HUB_PUBLIC=docker.io
 
-FROM ${DOCKER_HUB_PRIVATE}/cafinternal/prereleases:opensuse-jre8-3.2.0-SNAPSHOT
+FROM ${DOCKER_HUB_PRIVATE}/cafapi/opensuse-jre8:3
 
 # Update the OS packages and install Python
 RUN zypper -n refresh && \
