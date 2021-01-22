@@ -24,16 +24,3 @@ FROM ${DOCKER_HUB_PRIVATE}/cafapi/opensuse-jre8:3
 RUN zypper -n refresh && \
     zypper -n update && \
     zypper -n install python3
-
-# Tag the image
-ARG BUILD_NUMBER
-ARG BUILD_DATE
-ARG GIT_REPO
-ARG GIT_BRANCH
-ARG GIT_COMMIT
-
-LABEL Build.Number="$BUILD_NUMBER" \
-      Build.Date="$BUILD_DATE" \
-      Git.Repo="$GIT_REPO" \
-      Git.Branch="$GIT_BRANCH" \
-      Git.Commit="$GIT_COMMIT"
