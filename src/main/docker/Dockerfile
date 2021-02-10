@@ -22,4 +22,5 @@ FROM ${DOCKER_HUB_PUBLIC}/cafapi/opensuse-jre8:3
 # Update the OS packages and install Python
 RUN zypper -n refresh && \
     zypper -n update && \
-    zypper -n install python3
+    zypper -n install python3 && \
+    zypper -n clean --all
