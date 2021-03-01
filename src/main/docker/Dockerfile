@@ -17,7 +17,7 @@
 # Docker registry
 ARG DOCKER_HUB_PUBLIC=docker.io
 
-FROM ${DOCKER_HUB_PUBLIC}/cafapi/opensuse-jre8:3
+FROM ${DOCKER_HUB_PUBLIC}/cafapi/prereleases:opensuse-jre8-3.3.0-SNAPSHOT
 
 # Update the OS packages and install Python
 RUN zypper -n refresh && \
